@@ -29,3 +29,16 @@ const zucchineRestanti = zucchine.filter((item) => {
 
 console.log(zucchineLunghe)
 console.log(zucchineRestanti)
+
+//oppure con la forma contratta
+
+const zucchineLungheBis = zucchine.filter(item => {
+  return item.length >= 15;
+});
+
+const zucchineRestantiBis = zucchine.filter(item => {
+  return item.length < 15;
+});
+
+console.log(zucchineLungheBis)
+console.log(zucchineRestantiBis)
